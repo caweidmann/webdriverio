@@ -1,9 +1,5 @@
 /**
- * Abort the request once with one of the following error codes:
- * `Failed`, `Aborted`, `TimedOut`, `AccessDenied`, `ConnectionClosed`,
- * `ConnectionReset`, `ConnectionRefused`, `ConnectionAborted`,
- * `ConnectionFailed`, `NameNotResolved`, `InternetDisconnected`,
- * `AddressUnreachable`, `BlockedByClient`, `BlockedByResponse`.
+ * Abort the request once with an error code.
  *
  * <example>
     :addValue.js
@@ -14,6 +10,6 @@
  * </example>
  *
  * @alias mock.abort
- * @param {string} errorCode  error code of the response
+ * @param {ErrorCode} errorCode  error code of the response, can be one of: `Failed`, `Aborted`, `TimedOut`, `AccessDenied`, `ConnectionClosed`, `ConnectionReset`, `ConnectionRefused`, `ConnectionAborted`, `ConnectionFailed`, `NameNotResolved`, `InternetDisconnected`, `AddressUnreachable`, `BlockedByClient`, `BlockedByResponse`
  */
 // actual implementation is located in packages/webdriverio/src/utils/interception
